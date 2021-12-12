@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form Test</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="title">FORM</h1>
+    </div>
+
+    <form>
+
+<!-- Personal informations area -->
+
+<!--Name and Email-->
+        <h1 class="personal-info">Personal Informations</h1>
+        <fieldset class="personal-info-field">
+            <div class="name">
+                <label><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+
+            <div class="email">
+                <label><strong>Email</strong></label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+
+<!--Gender-->
+
+        <fieldset class="gender-field">
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <input type="radio" name="gender" id="dot-4">
+                <span class="gender-title">What is your gender?</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Non-binarie</span>
+                    </label>
+                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <br>
+        <br>
+
+<!--General informations-->
+<!--Favorite programming languages-->
+
+        <h1 class="general-text">General Informations</h1>
+        <fieldset class="language-programming">
+            <br>
+            <br>
+            <div class="favorite-programming-languages">
+                <input type="radio" name="language" id="lang-1">
+                <input type="radio" name="language" id="lang-2">
+                <input type="radio" name="language" id="lang-3">
+                <input type="radio" name="language" id="lang-4">
+                <input type="radio" name="language" id="lang-5">
+                <input type="radio" name="language" id="lang-6">
+                <input type="radio" name="language" id="lang-7">
+                <input type="radio" name="language" id="lang-8">
+                <input type="radio" name="language" id="none">
+                <span class="language-title">What is your favorite programming language?</span>
+                <div class="lang-category">
+                    <label for="lang-1">
+                        <span class="lang one"></span>
+                        <span class="language">Python</span>
+                    </label>
+                    <label for="lang-2">
+                        <span class="lang two"></span>
+                        <span class="language">JavaScript</span>
+                    </label>
+                    <label for="lang-3">
+                        <span class="lang three"></span>
+                        <span class="language">C++</span>
+                    </label>
+                    <label for="lang-4">
+                        <span class="lang four"></span>
+                        <span class="language">C#</span>
+                    </label>
+                    <label for="lang-5">
+                        <span class="lang five"></span>
+                        <span class="language">Java</span>
+                    </label>
+                    <label for="lang-6">
+                        <span class="lang six"></span>
+                        <span class="language">Ruby</span>
+                    </label>
+                    <label for="lang-7">
+                        <span class="lang seven"></span>
+                        <span class="language">C</span>
+                    </label>
+                    <label for="lang-8">
+                        <span class="lang eight"></span>
+                        <span class="language">Go</span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+
+        <!--IDE used to programming and what do you think about programming-->
+        
+        <div class="application">
+            <fieldset class="fieldset-ide">
+                <h1 class="ide">Which IDE do you use for coding?</h1>
+            <br>
+            <br>
+            <select id="application">
+                <option select disabled value="">Select</option>
+                <option>Sublime Text</option>
+                <option>Notepad ++</option>
+                <option>Visual Studio Code</option>
+                <option>Atom</option>
+                <option>VIM</option>
+            </select>
+            </fieldset>
+
+            <br>
+            <br>
+
+            <fieldset class="field-think">
+                <div class="txtarea">
+                    <br>
+                    <br>
+                    <h1>What do you think about programming?</h1>
+                    <br>
+                    <br>
+                    <textarea rows="8" style="width: 28em" id="speakabout" name="speakabout"></textarea>
+                </div>
+            </fieldset>
+
+        <button id="button" type="submit">Send</button>
+        <br>
+        <br>
+    </form>
+</body>
+</html>
